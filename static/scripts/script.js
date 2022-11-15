@@ -39,7 +39,8 @@ function news() {
 
 (() => {
 	// Main function
-
+	all();
+	
 	switch (window.location.pathname) {
 /*		case "/":
 			index();
