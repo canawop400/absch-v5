@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link type="text/css" rel="stylesheet" href="/static/styles/styles.css">
+
+		<title>ABSCH - Noticias</title>
+	</head>
+
+	<body>
+	
+		<div id="main-container">
+			<nav id="navbar" class="hidden">
+				<a href="/">
+					<img src="/static/images/logo.png" id="app-logo">
+				</a>
+
+				<a href="/">
+					<img src="/static/images/home.png" class="navbar-icon">
+					<span>Inicio</span>
+				</a>
+
+				<a href="/tramites/">
+					<img src="/static/images/procedures.png" class="navbar-icon">
+					<span>Tramites</span>
+				</a>
+
+				<a href="/noticias/">
+					<img src="/static/images/news.png" class="navbar-icon">
+					<span>Noticias</span>
+				</a>
+
+				<a href="/contacto/">
+					<img src="/static/images/contact.png" class="navbar-icon">
+					<span>Contacto</span>
+				</a>
+			</nav>
+
+			<main id="main">
+				<header id="page-header">
+					<div id="hamburger-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+
+					<h1>Pagina de noticias</h1>
+				</header>
+
+				<section id="news-wrapper">
+					{% for new in news %}
+						<div class="new">
+							<div class="new-image"></div>
+						
+							<h3 class="new-title">Title</h3>
+
+							<div class="new-button">Leer</div>
+						</div>
+					{% endfor %}
+				</section>
+			</main>
+
+		</div>
+
+		<script type="text/javascript" src="/static/scripts/script.js"></script>
+	</body>
+</html>
